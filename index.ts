@@ -8,15 +8,6 @@ const app = express();
 const PORT = process.env.PORT || 3000; 
 
 app.use(cors());
-app.use(express.json());
-
-app.options('*', cors());
-
-app.use((req, res, next) => {
-  console.log('Request headers:', req.headers);
-  next();
-});
-
 app.use("/", contactsRouter);
 
 app.listen(PORT, () => {
