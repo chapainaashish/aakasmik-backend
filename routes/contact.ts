@@ -11,7 +11,7 @@ const router = Router();
 const contacts = contactsJson as Contact[];
 
 // return all contacts
-router.get("/", (req: Request, res: Response) => {
+router.get("", (req: Request, res: Response) => {
   return res.send(contacts);
 });
 
@@ -27,7 +27,7 @@ router.get("/contacts", (req: Request, res: Response) => {
 });
 
 // return contacts based on search
-router.get("/search", (req: Request, res: Response) => {
+router.get("search", (req: Request, res: Response) => {
   const searchTerm = req.query.term as string;
   if (!searchTerm) {
     return res.status(400).send({ message: "Missing search term" });
@@ -44,7 +44,7 @@ router.get("/search", (req: Request, res: Response) => {
 });
 
 // endpoint to add the new contact through contribution form
-router.post("/add-contact", async (req, res) => {
+router.post("add-contact", async (req, res) => {
   const filePath = path.join(__dirname, "..", "db", "user_contact.json");
   const { recaptchaToken, ...contactData } = req.body;
   const secretKey = process.env.RECAPTCHA_SECRET_KEY; 

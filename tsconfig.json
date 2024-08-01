@@ -12,10 +12,10 @@
     "rootDir": "./"
   },
   "include": [
-    "src/**/*.ts",
-    "index.ts"
+    "./**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ]
 }

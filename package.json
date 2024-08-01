@@ -2,10 +2,11 @@
   "name": "aakasmik-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc"
+    "start": "node index.js",
+    "build": "tsc",
+    "dev": "ts-node-dev index.ts"
   },
   "keywords": [],
   "author": "Aashish Chapain",
