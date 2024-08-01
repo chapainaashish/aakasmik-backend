@@ -2,8 +2,7 @@ import { Request, Response, Router } from "express";
 import Contact from "../models/Contact";
 import contactsJson from "../db/contact.json";
 import getNearestContacts from "../utils/getNearestContacts";
-import fs from "fs";
-import path from "path";
+
 import axios from "axios";
 
 
@@ -43,13 +42,16 @@ router.get("/search", (req: Request, res: Response) => {
   return res.send(results);
 });
 
-// endpoint to add the new contact through contribution form
-router.post("/add-contact", async (req, res) => {
-  const filePath = path.join(__dirname, "..", "db", "user_contact.json");
+
+
+router.post("/add-contact", async (req: Request, res: Response) => {
   const { recaptchaToken, ...contactData } = req.body;
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY; 
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  const API_KEY = process.env.JSONBIN_API_KEY;
+  const BIN_ID = process.env.BIN_ID;
 
   try {
+    // Verify reCAPTCHA
     const recaptchaResponse = await axios.post(
       `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaToken}`
     );
@@ -61,13 +63,42 @@ router.post("/add-contact", async (req, res) => {
         .json({ success: false, message: "reCAPTCHA verification failed" });
     }
 
-    let existingData = JSON.parse(fs.readFileSync(filePath, "utf8"));
-    const newData = [...existingData, contactData]; 
-    fs.writeFileSync(filePath, JSON.stringify(newData, null, 2));
-    res.status(201).json({ success: true, data: contactData }); 
+    // Store data in Jsonbin.io
+    const url = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
+    const config = {
+      headers: {
+        'X-Master-Key': API_KEY,
+        'Content-Type': 'application/json'
+      }
+    };
+
+    // Fetch existing data
+    let existingData = [];
+    try {
+      const response = await axios.get(url, config);
+      existingData = response.data.record;
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        if (error.response && error.response.status !== 404) {
+          console.error('Error fetching data:', error.response ? error.response.data : error.message);
+          return res.status(500).json({ success: false, message: "Failed to fetch existing data" });
+        }
+      } else {
+        console.error('Unexpected error:', error);
+        return res.status(500).json({ success: false, message: "An unexpected error occurred" });
+      }
+    }
+
+    // Add new contact data
+    const newData = [...existingData, contactData];
+
+    await axios.put(url, newData, config);
+    res.status(201).json({ success: true, data: contactData });
+
   } catch (error) {
     console.error("Error:", error);
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 });
+
 export default router;
