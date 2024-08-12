@@ -50,16 +50,6 @@
         "longitude": 85.3240
     },
     {
-        "name": "Child Helpline",
-        "number": "104",
-        "category": "Child Helpline",
-        "province": "-",
-        "district": "-",
-        "city": "-",
-        "latitude": 27.7172,
-        "longitude": 85.3240
-    },
-    {
         "name": "CIAA",
         "number": "107",
         "category": "Misc",
@@ -385,7 +375,7 @@
     {
         "name": "Baglung Airport ",
         "number": "068-413133",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Baglung",
         "latitude": 28.2713,
@@ -413,7 +403,7 @@
     {
         "name": "Baitadi Airport ",
         "number": "095-400050",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 7",
         "district": "Baitadi",
         "latitude": 29.5012,
@@ -460,7 +450,7 @@
     {
         "name": "Bajura Airport ",
         "number": "985-6077523",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 7",
         "district": "Bajura",
         "latitude": 29.6313,
@@ -629,7 +619,7 @@
     {
         "name": "Bharatpur Airport ",
         "number": "056-524975",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 3",
         "district": "Chitwan",
         "city": "Bharatpur ",
@@ -689,7 +679,7 @@
     {
         "name": "Bhojpur Airport ",
         "number": "029-420118",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Bhojpur",
         "latitude": 27.1741,
@@ -716,7 +706,7 @@
     {
         "name": "Bhojpuri Airport ",
         "number": "029-420118",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Bhojpur",
         "latitude": 27.1741,
@@ -773,7 +763,7 @@
     {
         "name": "Biratnagar Airport ",
         "number": "021-461424",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Morang",
         "city": "Biratnagar ",
@@ -783,7 +773,7 @@
     {
         "name": "Biratnagar Airport ",
         "number": "021-461424",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Morang",
         "latitude": 26.6406,
@@ -870,7 +860,7 @@
     {
         "name": "Boardlink ",
         "number": "021-521252",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Morang",
         "city": "Biratnagar ",
@@ -900,7 +890,7 @@
     {
         "name": "Chandragadi Airport ",
         "number": "023-455432",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Jhapa",
         "city": "Chandragadi ",
@@ -910,7 +900,7 @@
     {
         "name": "Chandragadi Airport ",
         "number": "023-455432",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Jhapa",
         "latitude": 26.6399,
@@ -1122,7 +1112,7 @@
     {
         "name": "Dang Airport ",
         "number": "082-520369",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 5",
         "district": "Dang",
         "latitude": 27.9881,
@@ -1197,7 +1187,7 @@
     {
         "name": "Dhangadhi Airport ",
         "number": "091-525702",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 7",
         "district": "Kailali",
         "latitude": 28.8464,
@@ -1321,7 +1311,7 @@
     {
         "name": "Dolpa Airport ",
         "number": "081-565013",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 6",
         "district": "Dolpa",
         "latitude": 29.0774,
@@ -1359,7 +1349,7 @@
     {
         "name": "Dorpatan Airport ",
         "number": "029-420118",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Baglung",
         "latitude": 28.2713,
@@ -1368,7 +1358,7 @@
     {
         "name": "Doti Airport ",
         "number": "094-420111",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 7",
         "district": "Doti",
         "latitude": 29.0956,
@@ -1551,7 +1541,7 @@
     {
         "name": "Gautam Buddha International Airport ",
         "number": "071-597021",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 5",
         "district": "Rupandehi",
         "latitude": 27.6277,
@@ -1840,7 +1830,7 @@
     {
         "name": "Janakpur Airport ",
         "number": "041-520884",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 2",
         "district": "Dhanusa",
         "city": "Janakpur ",
@@ -1898,7 +1888,7 @@
     {
         "name": "Jomsom Airport ",
         "number": "087-520015",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Mustang",
         "latitude": 28.9828,
@@ -2414,7 +2404,7 @@
     {
         "name": "Manang Airport ",
         "number": "066-440457",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Manang",
         "latitude": 28.6696,
@@ -2881,7 +2871,7 @@
     {
         "name": "Nepalgunj Airport ",
         "number": "081-565210",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 5",
         "district": "Banke",
         "city": "Nepalgunj ",
@@ -3171,7 +3161,7 @@
     {
         "name": "Phaplu Airport ",
         "number": "038-520153",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Solukhumbu",
         "city": "Phaplu ",
@@ -3181,7 +3171,7 @@
     {
         "name": "Pokhara Airport ",
         "number": "061-463038",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Kaski",
         "latitude": 28.226,
@@ -3190,7 +3180,7 @@
     {
         "name": "Pokhara International Airport ",
         "number": "061-465725",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 4",
         "district": "Kaski",
         "latitude": 28.226,
@@ -3257,7 +3247,7 @@
     {
         "name": "Rajbiraj Airport ",
         "number": "031-520700",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 2",
         "district": "Saptari",
         "city": "Rajbiraj ",
@@ -3391,7 +3381,7 @@
     {
         "name": "Rukum Chaurjahari Airport ",
         "number": "089-680156",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 6",
         "district": "Western rukum",
         "latitude": 28.7441,
@@ -3400,7 +3390,7 @@
     {
         "name": "Rukum salle Airport ",
         "number": "975-2503142",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 6",
         "district": "Western rukum",
         "latitude": 28.7441,
@@ -3409,7 +3399,7 @@
     {
         "name": "Rumjatar Airport ",
         "number": "984-6385133",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Okhaldhunga",
         "city": "Rumjatar",
@@ -3612,7 +3602,7 @@
     {
         "name": "Simara Airport",
         "number": "053-520210",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 2",
         "district": "Bara",
         "city": "Simara",
@@ -3622,7 +3612,7 @@
     {
         "name": "Simikot Airport ",
         "number": "087-680203",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 6",
         "district": "Humla",
         "latitude": 30.0053,
@@ -3737,7 +3727,7 @@
     {
         "name": "Suketar Airport ",
         "number": "024-414018",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Taplejung",
         "city": "Suketar",
@@ -3786,7 +3776,7 @@
     {
         "name": "Surkhet Airport ",
         "number": "083-921945",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 6",
         "district": "Surkhet",
         "latitude": 28.6263,
@@ -3928,7 +3918,7 @@
     {
         "name": "Tenzing - Hillary Airport ",
         "number": "038-550044",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Solukhumbu",
         "latitude": 27.7784,
@@ -3937,7 +3927,7 @@
     {
         "name": "Tenzing-Hillary Airport ",
         "number": "038-550044",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Solukhumbu",
         "latitude": 27.7784,
@@ -3965,7 +3955,7 @@
     {
         "name": "Tikapur Airport ",
         "number": 8446192513,
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 7",
         "district": "Kailali",
         "latitude": 28.8464,
@@ -3992,7 +3982,7 @@
     {
         "name": "Tribhuvan International Airport ",
         "number": "01-4113033",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 3",
         "district": "Kathmandu",
         "latitude": 27.7172,
@@ -4011,7 +4001,7 @@
     {
         "name": "Tumlingtar Airport ",
         "number": "029-575121",
-        "category": "Airpot",
+        "category": "Airport",
         "province": "Province 1",
         "district": "Sankhuwasabha",
         "city": "Tumlingtar ",
